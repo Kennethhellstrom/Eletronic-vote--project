@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna eletronica</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="urna">
+        <div class="screen">
+            <div class="session-1">
+                <div class="session-1-1">
+                    <div class="session-1-1-1">
+                        <span>your vote for</span>
+                    </div>
+                    <div class="session-1-1-2">
+                        <span>councilor</span>
+                    </div>
+                    <div class="session-1-1-3">
+                        <div class="number"></div>
+                        <div class="number"></div>
+                    </div>
+                    <div class="session-1-1-4">
+                        Name: <br>
+                        Party: <br>
+                        Vice-Mayor:
+                    </div>
+                </div>
+                <div class="session-1-2">
+                    <div class="image">
+                        <img src="./images/84.jpg" alt="">
+                        Mayor
+                    </div>
+                    <div class="image vice">
+                        <img src="./images/84_2.jpg" alt="">
+                        Vice-mayor
+                    </div>
+                </div>
+            </div>
+            <div class="session-2">
+                Press the button:
+                <p>CONFIRM to CONFIRM the vote <br>
+                CORRECT to CORRECT the vote</p>
+
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="btn-line">
+                <div class="btn-n" onclick="clicked(1)">1</div>
+                <div class="btn-n" onclick="clicked(2)">2</div>
+                <div class="btn-n" onclick="clicked(3)">3</div>
+            </div>
+            <div class="btn-line">
+                <div class="btn-n" onclick="clicked(4)">4</div>
+                <div class="btn-n" onclick="clicked(5)">5</div>
+                <div class="btn-n" onclick="clicked(6)">6</div>
+            </div>
+            <div class="btn-line">
+                <div class="btn-n" onclick="clicked(7)">7</div>
+                <div class="btn-n" onclick="clicked(8)">8</div>
+                <div class="btn-n" onclick="clicked(9)">9</div>
+            </div>
+            <div class="btn-line">
+                <div class="btn-n" onclick="clicked(0)">0</div>
+            </div>
+            <div class="btn-line botton">
+                <div class="btn-n blank" onclick="blank()">Blank</div>
+                <div class="btn-n correct" onclick="correct()">Correct</div>
+                <div class="btn-n  confirm" onclick="confirm()">Confirm</div>
+            </div>
+        </div>
+    </div>
+    <script src="./stages.js"></script>
+    <script src="./script.js"></script>   
+</body>
+</html>
